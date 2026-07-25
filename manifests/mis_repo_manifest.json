@@ -77,5 +77,27 @@
     "Multi-Data-Isolation-Invariants",
     "Cross-Cloud-Latency-Optimized-State-Replication",
     "Real-Time-Billing-Usage-Invariant-Aggregation"
-  ]
+  ],
+  "commands": {
+    "module": "mis/commands/RealTimeBillingUsageInvariantAggregationCommands.mis",
+    "network_bind": "mis/commands/RealTimeBillingUsageInvariantAggregationNetworkBind.mis",
+    "catalog": "mis/commands/RealTimeBillingUsageInvariantAggregationCommandCatalog.mis",
+    "family": "domain_ml",
+    "commands": [
+      "cmd_check",
+      "cmd_pack_dispatch",
+      "cmd_connect_network",
+      "cmd_rpc_ping",
+      "cmd_settle_clrty1",
+      "cmd_sync_cherry",
+      "cmd_index_bind",
+      "cmd_ingest",
+      "cmd_prove",
+      "cmd_replicate",
+      "cmd_aggregate"
+    ],
+    "network": "clrty-1",
+    "chain_id": 1202
+  },
+  "updated_at": "2026-07-25T19:49:48.317Z"
 }
