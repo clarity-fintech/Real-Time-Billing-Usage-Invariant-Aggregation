@@ -1,0 +1,81 @@
+{
+  "schema": "clrty.mis_repo/v1",
+  "creator": "Chandler William Ferguson",
+  "org": "clarity-fintech",
+  "repo": "Real-Time-Billing-Usage-Invariant-Aggregation",
+  "title": "Real-Time Billing Usage Invariant Aggregation",
+  "deep_root": {
+    "language": "moniversive",
+    "dialect": "mis-ml",
+    "extension": ".mis",
+    "language_root": "CLRTY_SUBSTRATE/boot/moniversive_language_root.json",
+    "settlement_network": "clrty-1",
+    "settlement_chain_id": 1202,
+    "embed_gates": "3..=6",
+    "letter_hash": "sha256-rolling-typed-letter/v1",
+    "compiler": "bin/misc"
+  },
+  "domain": "billing_usage",
+  "band": "rbua-001..=100",
+  "primary_catalog": "CLRTY_SUBSTRATE/boot/monetization_layers_manifest.json",
+  "kernel": "mis/kernel/RealtimeBillingUsageAggregationKernel.mis",
+  "backlink_index": "mis/backlinks/MisBacklinkIndex.mis",
+  "packs": [
+    {
+      "name": "MeterTickCapture",
+      "slug": "meter_tick",
+      "band": "1..=20",
+      "module": "mis/packs/meter_tick.mis"
+    },
+    {
+      "name": "UsageWindowFold",
+      "slug": "usage_window",
+      "band": "21..=40",
+      "module": "mis/packs/usage_window.mis"
+    },
+    {
+      "name": "FeeInvariantSplit",
+      "slug": "fee_split",
+      "band": "41..=60",
+      "module": "mis/packs/fee_split.mis"
+    },
+    {
+      "name": "TreasuryRoutePlan",
+      "slug": "treasury_route",
+      "band": "61..=80",
+      "module": "mis/packs/treasury_route.mis"
+    },
+    {
+      "name": "Clrty1SettleAck",
+      "slug": "settle_ack",
+      "band": "81..=100",
+      "module": "mis/packs/settle_ack.mis"
+    }
+  ],
+  "mis_data_backlinks": [
+    "CLRTY_SUBSTRATE/boot/moniversive_language_root.json",
+    "CLRTY_SUBSTRATE/boot/mis_code_index.json",
+    "CLRTY_SUBSTRATE/boot/mis_framework_taxonomy.json",
+    "CLRTY_SUBSTRATE/boot/mis_kernel_active_only.json",
+    "CLRTY_SUBSTRATE/boot/clrty1_static_ml_invariants.json",
+    "CLRTY_SUBSTRATE/boot/clrty1_mis_native_kernels_776_875.json",
+    "CLRTY_SUBSTRATE/boot/clrty1_mis_architecture_primitives_876_975.json",
+    "CLRTY_SUBSTRATE/boot/clrty1_mis_chain_intake_976_1025.json",
+    "CLRTY_SUBSTRATE/boot/clrty1_gradient_invariants_201_300.json",
+    "moniversive/framework/mis_kernel.mis",
+    "moniversive/framework/MisAllCodeIndex.mis",
+    "moniversive/framework/mis_ml.mis",
+    "moniversive/framework/MisRouter.mis",
+    "path.mis",
+    "bin/misc"
+  ],
+  "sibling_repos": [
+    "moniversive_invariant_static_ML",
+    "Distributed-Denial-of-Service-DDoS-Mitigation-Geometry-",
+    "Heterogeneous-Event-Stream-Synchronization",
+    "Schemaless-Data-Transformation-Pipelines",
+    "Multi-Data-Isolation-Invariants",
+    "Cross-Cloud-Latency-Optimized-State-Replication",
+    "Real-Time-Billing-Usage-Invariant-Aggregation"
+  ]
+}
