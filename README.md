@@ -20,3 +20,8 @@ Backlinked to [moniversive_invariant_static_ML](https://github.com/clarity-finte
 bin/misc mis/kernel/RealtimeBillingUsageAggregationKernel.mis --check --compact-letters
 find mis -name '*.mis' -print0 | xargs -0 -n1 bin/misc --check --compact-letters
 ```
+
+
+## Learning guides
+
+- [Static ML backlinks (GitBook)](https://github.com/clarity-fintech/gitbook/blob/main/moniversive/guides/static-ml-backlinks.md) — domain mesh, kernel, and Moniversive learning path\n
