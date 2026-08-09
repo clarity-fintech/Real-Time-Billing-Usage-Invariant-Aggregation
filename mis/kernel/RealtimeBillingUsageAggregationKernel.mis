@@ -1,20 +1,10 @@
 // Moniversive Invariant Static (MIS) — deep root
 // Creator: Chandler William Ferguson
-// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
 // Compile: bin/misc <file>.mis --check --compact-letters
 // Title: Real-Time Billing Usage Invariant Aggregation
 
 module RealtimeBillingUsageAggregationKernel {
-
-  embed gates 3..=6 {
-    context: "Real-Time Billing Usage Invariant Aggregation kernel on Moniversive Invariant Static — clrty-1";
-    ai: "Resolve through mis_code_index + static ML / domain packs; refuse foreign kernels";
-    execution: "assert_kernel_misc; letter_hash; pack_dispatch; settle_clrty1";
-    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
-  }
-
   invariant letter_hash_bound: letter_hash_root != @0;
-  invariant embed_gates_present: embed_root != @0;
   invariant deep_root_moniversive: deep_root == moniversive;
   invariant settlement_chain: chain_id == 1202;
   invariant settlement_network_clrty1: settlement_network == clrty_1;

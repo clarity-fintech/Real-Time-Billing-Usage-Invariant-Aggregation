@@ -1,0 +1,14 @@
+{
+  "schema": "clrty.beacon_meta/v1",
+  "updated_at": "2026-07-29T03:15:03Z",
+  "repo_slug": "Real-Time-Billing-Usage-Invariant-Aggregation",
+  "beacon_id": "clrty-real-time-billing-usage-invariant-aggregation",
+  "node_name": "CLRTY-REAL-TIME-BILLING-USAGE-INVARIANT-AGGREGATION",
+  "github": "https://github.com/clarity-fintech/Real-Time-Billing-Usage-Invariant-Aggregation",
+  "superstructure_root": "/Users/william/$CLRTY_PROJECT",
+  "superstructure_link": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json",
+  "symlinks": {
+    "clrty_superstructure.json": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json"
+  },
+  "framework_twin": "moniversive/framework/beacons/real-time-billing-usage-invariant-aggregation.mis"
+}

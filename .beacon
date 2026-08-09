@@ -1,0 +1,28 @@
+// CLRTY-REAL-TIME-BILLING-USAGE-INVARIANT-AGGREGATION node beacon — clarity-fintech / clrty-1 / 1202
+// GitHub: https://github.com/clarity-fintech/Real-Time-Billing-Usage-Invariant-Aggregation
+// Check twin: bin/misc moniversive/framework/beacons/real-time-billing-usage-invariant-aggregation.mis --check --compact-letters
+
+module ClrtyRealTimeBillingUsageInvariantAggregationBeacon {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant beacon_id: beacon_id == clrty_real_time_billing_usage_invariant_aggregation;
+  invariant node_name: node_name == clrty_real_time_billing_usage_invariant_aggregation;
+
+  outcome heartbeat(seq: Bytes) {
+    require seq != @0;
+    constraint chain_id == 1202;
+    constraint heartbeat_ok == true;
+  }
+
+  outcome superstructure_bind(catalog: Bytes) {
+    require catalog != @0;
+    constraint superstructure_linked == true;
+  }
+
+  outcome letter_hash(payload: Bytes) {
+    require payload != @0;
+    constraint letter_root != @0;
+  }
+}
